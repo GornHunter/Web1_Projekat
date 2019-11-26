@@ -1,0 +1,69 @@
+﻿@model Web1_Projekat.Models.Korisnik
+
+@{
+    ViewBag.Title = "Registracija";
+}
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquey.min.css"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.css"></script>
+    </head>
+
+    <body>
+        <h2 class="text-center">Registracija</h2>
+        <br />
+        <br />
+        <form action="/Apartman/Registracija" method="post">
+            <div top="5px" class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <div class="form-group">
+                            <label>Korisnicko ime:</label>
+                            <input type="text" class="form-control" name="KorisnickoIme" placeholder="Unesite koricnicko ime" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Lozinka:</label>
+                            <input type="password" class="form-control" name="Lozinka" placeholder="Unesite lozinku" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ime:</label>
+                            <input type="text" class="form-control" name="Ime" placeholder="Unesite ime" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Prezime:</label>
+                            <input type="text" class="form-control" name="Prezime" placeholder="Unesite prezime" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Pol:</label> <br />
+                            <select class="form-control" name="Pol">
+                                <option value="Muski">Muski</option>
+                                <option value="Zenski">Zenski</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Uloga:</label> <br />
+                            <select class="form-control" name="Uloga">
+                                <option value="Gost">Gost</option>
+                            </select> <br /> <br />
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Registruj se</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </body>
+</html>
+
